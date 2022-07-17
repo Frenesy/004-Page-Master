@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="page-mode">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="_css/layout-1.css" class="css">
+        <title>Layout 01</title>
+    </head>
+    <body onload="onDarkModeChecked()">
+        <header>
+            <nav class="cabecalho">
+                <div class="logo-img">
+                    <a href="index.html">
+                        <img src="_img/ExControl.svg" alt="">
+                    </a>
+                </div>
+                <button id="menu-button" class="menu-button" onclick="onMenuShow()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+                <div class="menu-input">
+                    <input type="text" placeholder="User Name" class="user-name">
+                    <input type="password" placeholder="Password" class="password">
+                    <button class="login-btn">Entrar</button>
+                    <button id="dm-button" class="dm-button" onclick="DarkMode()"></button>
+                </div>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <div>
+                    <input type="text" placeholder="User Name" class="user-name">
+                    <input type="password" placeholder="Password" class="password">
+                    <button class="login-btn">Entrar</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-section">
+                <section>
+                    <img src="_int/int-01.png">
+                    <h1>Grande Título</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur eveniet odit voluptatum debitis enim voluptatibus officiis autem accusantium corporis, eligendi earum vero et facilis quo fugiat minima vitae nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae magnam aut commodi quisquam? Maxime vitae, sint nihil molestiae quos facere? Autem quis odio aut doloribus deserunt architecto nostrum soluta eius!</p>
+                </section>
+                
+                <section>
+                    <img src="_int/int-02.png">
+                    <h1>Grande Título</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur eveniet odit voluptatum debitis enim voluptatibus officiis autem accusantium corporis, eligendi earum vero et facilis quo fugiat minima vitae nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae magnam aut commodi quisquam? Maxime vitae, sint nihil molestiae quos facere? Autem quis odio aut doloribus deserunt architecto nostrum soluta eius!</p>
+                </section>
+            </div>
+            
+            <section class="right-fixed">
+                <article>
+                    <h1>Titulo</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto atque obcaecati libero hic laborum dicta, laudantium saepe quibusdam, et est dignissimos rem cupiditate deserunt non dolores quasi blanditiis alias.</p>
+                </article>
+                
+                <article>
+                    <h1>Titulo</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto atque obcaecati libero hic laborum dicta, laudantium saepe quibusdam, et est dignissimos rem cupiditate deserunt non dolores quasi blanditiis alias.</p>
+                </article>
+                
+                <article>
+                    <h1>Titulo</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto atque obcaecati libero hic laborum dicta, laudantium saepe quibusdam, et est dignissimos rem cupiditate deserunt non dolores quasi blanditiis alias.</p>
+                </article>
+                
+                <article>
+                    <h1>Titulo</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto atque obcaecati libero hic laborum dicta, laudantium saepe quibusdam, et est dignissimos rem cupiditate deserunt non dolores quasi blanditiis alias.</p>
+                </article>
+            </section>
+        </main>
+
+        <script src="_js/javascript.js"></script>
+    </body>
+</html>

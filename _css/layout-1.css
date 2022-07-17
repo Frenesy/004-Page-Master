@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.page-mode:root {
+    --pri-color: #3f6f9c;
+    --sec-color: #4788c4;
+    --bac-color: #6087ab;
+    --btn-color: #F36523;
+    --btn-hover: #E7A331;
+    --asi-color: #335eb4;
+    --asi-title: #547c9f;
+    --deft-text: black;
+}
+.dark-mode:root {
+    --pri-color: #414143;
+    --sec-color: #585858;
+    --bac-color: #241F21;
+    --btn-color: #F36523;
+    --btn-hover: #E7A331;
+    --asi-color: #6D6F73;
+    --asi-title: #93979A;
+    --deft-text: white;
+}
+
+body {
+    background-color: var(--pri-color);
+    font-family: 'Roboto';
+}
+main {
+    width: fill;
+    margin: auto;
+    height: auto;
+    background-color: var(--bac-color);
+    display: flex;
+}
+@media screen and (min-width: 1900px) {
+    nav.cabecalho {
+        width: 1280px;
+        margin: auto auto;
+    }
+    main {
+        font-size: 20px;
+        width: 1280px;
+    }
+}
+@media screen and (max-width: 930px) {
+    div.menu-input {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    nav.cabecalho {
+        justify-content: space-around;
+    }
+    main section.right-fixed {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 630px) {
+    nav.cabecalho input {
+        width: 130px;
+    }
+    nav.cabecalho button.login-btn {
+        width: 130px;
+    }
+    main {
+        display: block;
+        width: 100%;
+    }
+    div.main-section {
+        display: block;
+        width: 100%;
+    }
+    main > section.right-fixed {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 435px) {
+    div.menu-input {
+        display: none;
+    }
+    nav.cabecalho button.menu-button {
+        display: block;
+    }
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fill;
+    height: 150px;
+    background-color:var(--sec-color);
+}
+.cabecalho img {
+    height: 140px;
+    padding: 30px;
+    cursor: pointer;
+}
+.menu-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.cabecalho input {
+    height: 35px;
+    width: 230px;
+    outline: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+.cabecalho button.login-btn {
+    height: 35px;
+    width: 230px;
+    margin-right: 20px;
+    border: none;
+    background-color: var(--btn-hover);
+    color: white;
+    font-size: 17px;
+    transition: .5s;
+    cursor: pointer;
+}
+.cabecalho button.login-btn:hover {
+    background-color: var(--btn-color);
+}
+.dm-button {
+    border: none;
+    background: url(../_img/sun.svg) no-repeat 7px 3px;
+    background-size: 70%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+button.menu-button {
+    display: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+}
+button.menu-button div.bar1 {
+    height: 3px;
+    width: auto;
+    background-color: white;
+    margin: 0px 20px;
+}
+button.menu-button div.bar2 {
+    height: 3px;
+    width: auto;
+    background-color: white;
+    margin: 7px 20px;
+}
+button.menu-button div.bar3 {
+    height: 3px;
+    width: auto;
+    background-color: white;
+    margin: 0px 20px;
+}
+header div.mobile-menu {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    visibility: hidden;
+    clip-path: circle(0% at 90% -90px);
+    background-color: var(--sec-color);
+    transition: 0.5s;
+    overflow: hidden;
+    color: white;
+    z-index: 9999;
+}
+header div.mobile-menu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header div.mobile-menu input {
+    width: 95%;
+    height: 50px;
+    text-align: center;
+}
+header div.mobile-menu input::placeholder {
+    text-align: center;
+}
+header div.mobile-menu button.login-btn {
+    height: 50px;
+    width: 95%;
+    margin-top: 10px;
+    border: none;
+    background-color: var(--btn-hover);
+    color: white;
+    font-size: 17px;
+    transition: .5s;
+    cursor: pointer;
+}
+header div.mobile-menu button.login-btn:hover {
+    background-color: var(--btn-color);
+}
+header div.open {
+    clip-path: circle(100%);
+    visibility: visible;
+}
+
+#dm-button {
+    border-style: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    background: url(../_img/sun.svg) no-repeat 5px 5px;
+    background-size: 60%;
+    cursor: pointer;
+    transition: .5s;
+}
+#dm-button.active {
+    border-style: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    background: url(../_img/night.svg) no-repeat 5px 5px;
+    background-size: 60%;
+    cursor: pointer;
+}
+
+.main-section {
+    width: 70%;
+}
+.main-section section {
+    padding: 50px;
+}
+.main-section section img {
+    width: 50%;
+    height: 50%;
+}
+.main-section section h1 {
+    margin-top: 20px;
+    color: white;
+}
+.main-section section p {
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--deft-text);
+}
+
+section.right-fixed {
+    position: relative;
+    float: right;
+    margin-right: 70px;
+    width: 400px;
+    background-color: var(--asi-color);
+    height: auto;
+}
+section.right-fixed article {
+    margin: 25px;
+}
+section.right-fixed h1 {
+    background-color: var(--asi-title);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: fill;
+    height: 50px;
+    text-align: center;
+}
+section.right-fixed p {
+    margin: 30px auto;
+    font-weight: bold;
+}
