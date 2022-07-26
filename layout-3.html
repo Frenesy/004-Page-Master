@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="page-mode">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="_css/layout-3.css" class="css">
         <title>Layout 03</title>
     </head>
-    <body>
+    <body onload="onDarkModeChecked()">
         <header>
-            
+            <nav>
+                <a href="index.html">
+                    <img src="_img/ExControl.svg" alt="Logo do site">
+                </a>
+                <div class="left-menu">
+                    <button id="dm-button" class="dm-button" onclick="DarkMode()"></button>
+                    <a href="https://www.facebook.com/FilipeSilvaTJ" id="face-btn"></a>
+                    <a href="https://github.com/Frenesy" id="git-btn"></a>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Pesquisar" id="int-text">
+                        <button class="btn-search"></button>
+                    </div>
+                </div>
+            </nav>
         </header>
+        
         <main>
+            <div class="page-top">
+                <div class="img-0"></div>
+                <div class="text-group">
+                    <h2>Título da Matéria</h2>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, a? Odio omnis, delectus neque ex eveniet quisquam commodi obcaecati! Non exercitationem molestias quo blanditiis quod et qui unde beatae veritatis!</h5>
+                </div>
+            </div>
 
+            <div class="page-center"></div>
+
+            <div class="page-bottom" id="page-bottom">
+                <div class="left-text" id="left-text">
+                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid possimus dolore libero debitis consequuntur blanditiis doloribus quam similique! Quia dolorem perspiciatis optio quod vero! Corrupti veritatis nam eos dolores amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ex reiciendis ipsam at distinctio enim sunt debitis beatae, iure unde pariatur, ipsa eaque! Impedit commodi ullam quisquam nulla necessitatibus dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum illo cupiditate natus quasi totam? Eos accusamus, quisquam repellat, dolore nemo ullam quis explicabo fuga reiciendis, tempora dolores fugiat a!</h4>
+                </div>
+                <div class="right-text" id="right-text">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere ullam rerum unde veniam, aspernatur, expedita perspiciatis blanditiis sed corporis, pariatur iure possimus voluptas obcaecati suscipit sunt molestias modi quis!</h4>
+                    <div class="little-block" id="little-block">
+                        <div class="img-1"></div>
+                        <div class="img-2"></div>
+                        <div class="img-3"></div>
+                    </div>
+                </div>
+            </div>
         </main>
+        
+        <script src="_js/javascript.js"></script>
     </body>
 </html>

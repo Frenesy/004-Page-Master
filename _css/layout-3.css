@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;1,600&family=El+Messiri:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.page-mode:root {
+    --pri-color: #3f6f9c;
+    --sec-color: #4788c4;
+    --bac-color: #6087ab;
+    --btn-color: #F36523;
+    --btn-hover: #E7A331;
+    --asi-color: #335eb4;
+    --asi-title: #547c9f;
+    --deft-text: black;
+}
+.dark-mode:root {
+    --pri-color: #414143;
+    --sec-color: #585858;
+    --bac-color: #241F21;
+    --btn-color: #F36523;
+    --btn-hover: #E7A331;
+    --asi-color: #6D6F73;
+    --asi-title: #93979A;
+    --deft-text: white;
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        width: 1240px;
+        margin: auto;
+    }
+
+    nav {
+        width: 1240px;
+        margin: auto;
+    }
+
+    #int-text {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 1255px) {
+    #little-block {
+        grid-template-columns: 200px 200px;
+    }
+
+    #little-block div {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #little-block {
+        grid-template-columns: 350px;
+    }
+
+    #little-block div {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #page-bottom {
+        display: block;
+        height: 100%;
+    }
+
+    #left-text {
+        width: 100%;
+    }
+
+    #right-text {
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    #little-block {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+body {
+    background-color: var(--bac-color);
+    font-family: 'Bai Jamjuree';
+    color: var(--deft-text);
+}
+
+main {
+    padding: 0px 30px;
+}
+
+header {
+    background-color: var(--asi-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 30px;
+    margin-top: 15px;
+}
+
+header a img {
+    width: 50px;
+}
+
+header div.left-menu {
+    display: flex;
+    align-items: center;
+}
+
+header div.left-menu a {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin: 0px 5px;
+}
+
+header div.left-menu a#face-btn {
+    background: url('../_img/facebook.png') no-repeat 4px 4px;
+    background-size: 20px;
+}
+
+header div.left-menu a#git-btn {
+    background: url('../_img/github.png') no-repeat 5px 4px;
+    background-size: 20px;
+}
+
+header div.left-menu button#dm-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0px solid white;
+    margin: 0px 5px;
+    background: url('../_img/sun.svg') no-repeat;
+    background-size: contain;
+    transition: .5s;
+    cursor: pointer;
+}
+
+header div.left-menu button#dm-button.active {
+    border-style: none;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    background: url(../_img/night.svg) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+header div.left-menu div.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+header div.left-menu div.search-bar input {
+    width: 30vw;
+    height: 30px;
+    margin: 0px 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+header div.left-menu div.search-bar button {
+    position: relative;
+    right: 30px;
+    width: 35px;
+    height: 29px;
+    border: none;
+    background-color: var(--btn-color);
+}
+
+main div.page-top {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+main div.page-top div.img-0 {
+    width: 100px;
+    height: 100px;
+    background: url('../_img/no_image_1.png') -25px;
+    background-size: cover;
+    border: 1px solid var(--asi-title);
+}
+
+main div.page-top div.text-group {
+    margin-left: 15px;
+    font-size: small;
+    width: 300px;
+    height: 100px;
+}
+
+main div.page-center {
+    border: 1px solid var(--asi-title);
+    width: 100%;
+    height: 450px;
+    background: url('../_img/back-img.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main div.page-bottom {
+    display: flex;
+    height: 250px;
+    margin: 40px 0px;
+}
+
+main div.page-bottom div.left-text {
+    width: 60%;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+main div.page-bottom div.right-text {
+    width: 40%;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+main div.page-bottom div.right-text div.little-block {
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+main div.page-bottom div.right-text div.little-block div.img-1 {
+    width: 140px;
+    height: 140px;
+    background: url('../_img/no_image_1.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid var(--asi-title);
+}
+
+main div.page-bottom div.right-text div.little-block div.img-2 {
+    width: 140px;
+    height: 140px;
+    background: url('../_img/no_image_1.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid var(--asi-title);
+}
+
+main div.page-bottom div.right-text div.little-block div.img-3 {
+    width: 140px;
+    height: 140px;
+    background: url('../_img/no_image_1.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid var(--asi-title);
+}

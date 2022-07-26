@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .page-mode:root {
     --pri-color: #3f6f9c;
     --sec-color: #4788c4;
@@ -13,6 +14,7 @@
     --asi-title: #547c9f;
     --deft-text: black;
 }
+
 .dark-mode:root {
     --pri-color: #414143;
     --sec-color: #585858;
@@ -23,9 +25,11 @@
     --asi-title: #93979A;
     --deft-text: white;
 }
+
 body {
     background-color: var(--bac-color);
 }
+
 main {
     width: 1280px;
     height: fill;
@@ -40,72 +44,89 @@ main {
         width: 1280px;
         margin: auto auto;
     }
+
     main article.right-fixed {
         margin-right: 0px;
     }
 }
+
 @media screen and (max-width: 1300px) {
     nav.cabecalho img {
         width: 120px;
     }
+
     article.main-article {
         width: 50%;
     }
+
     main {
         width: auto;
         margin: auto;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .right-fixed section {
-       flex-direction: column;
+        flex-direction: column;
     }
+
     section div.box-section img {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1000px) {
     main div.grid-box {
         grid-template-columns: 200px 200px;
         justify-content: center;
         align-items: center;
     }
+
     main div.grid-box div.grid-content {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 800px) {
     main {
         display: block;
         width: 100%;
     }
+
     main article.main-article {
         width: 100%;
     }
+
     main div.grid-box {
         grid-template-columns: 120px 120px 120px 120px;
     }
+
     main article.right-fixed {
         float: none;
         width: 100%;
     }
 }
+
 @media screen and (max-width: 600px) {
     main div.grid-box {
         grid-template-columns: 200px 200px;
     }
 }
+
 @media screen and (max-width: 450px) {
     header nav.cabecalho img {
         width: 100%;
     }
+
     main div.grid-box {
         grid-template-columns: 100%;
     }
+
     main div.grid-box div.grid-content {
         width: 100%;
     }
 }
+
 .cabecalho {
     display: flex;
     justify-content: center;
@@ -114,6 +135,7 @@ main {
     background-color: var(--sec-color);
     color: white;
 }
+
 .cabecalho a {
     width: 250px;
     margin: 20px;
@@ -121,16 +143,19 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 .cabecalho img {
     width: 220px;
     height: 220px;
 }
+
 .cabecalho div.menu-content {
     margin: 50px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .cabecalho div.button-box {
     display: flex;
     justify-content: center;
@@ -149,6 +174,7 @@ button#dm-button {
     cursor: pointer;
     transition: .5s;
 }
+
 button#dm-button.active {
     border-style: none;
     background-color: transparent;
@@ -163,21 +189,25 @@ article.main-article {
     width: 70%;
     height: fill;
 }
+
 div.img-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 div.img-text img {
     width: 70%;
     box-shadow: 0px 0px 4px var(--deft-text);
     margin: 50px 0px;
 }
+
 div.img-text p {
     padding: 0px 15% 50px 15%;
     text-align: justify;
 }
+
 div.grid-box {
     display: grid;
     grid-template-columns: 120px 120px 120px 120px;
@@ -185,14 +215,17 @@ div.grid-box {
     margin: auto;
     justify-content: center;
 }
+
 div.grid-box img {
     width: 120px;
     transition: .5s;
     border: 1px solid var(--deft-text);
 }
+
 div.grid-box img:hover {
     background-color: var(--btn-hover);
 }
+
 div.grid-box div.grid-content {
     width: 120px;
     height: 190px;
@@ -209,6 +242,7 @@ article.right-fixed {
     height: fill;
     background-color: var(--pri-color);
 }
+
 article.right-fixed section {
     display: flex;
     height: fill;
@@ -217,13 +251,16 @@ article.right-fixed section {
     cursor: pointer;
     transition: .5s;
 }
+
 article.right-fixed section:hover {
     background-color: var(--btn-hover);
 }
+
 article.right-fixed img {
     border: 1px solid var(--deft-text);
     width: 150px;
 }
+
 article.right-fixed div.title-text {
     padding-left: 15px;
 }
