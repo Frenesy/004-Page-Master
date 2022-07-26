@@ -17,11 +17,17 @@ function DarkMode(){
         AllPage.classList.remove('dark-mode');
 
         localStorage.setItem('DarkMode', 0); /* 01 */
+        if (document.title == 'Layout 04') {
+            document.querySelector('header').classList.remove('active');
+        }
     } else {
         darkModeBtn.classList.add('active');
         AllPage.classList.add('dark-mode');
 
         localStorage.setItem('DarkMode', 1); /* 01 */
+        if (document.title == 'Layout 04') {
+            document.querySelector('header').classList.add('active');
+        }
     }
 }
 // VERIFICAR SE A PÁGINA ESTÁ EM DARK MODE
@@ -29,6 +35,10 @@ function onDarkModeChecked(){
     if (localStorage.getItem('DarkMode') == 1) {
         darkModeBtn.classList.add('active');
         AllPage.classList.add('dark-mode');
+        
+        if (document.title == 'Layout 04') {
+            document.querySelector('header').classList.add('active');
+        }
     }
 }
 
